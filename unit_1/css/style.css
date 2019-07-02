@@ -1,0 +1,17 @@
+html {
+	height: 100%;
+}
+
+body {
+    height: 100%;
+    background-repeat: no-repeat;
+    background: linear-gradient(to bottom right, #FFD5C2, #FC6074);
+
+}
+
+h1, p {
+	text-align: center;
+    color: #00494D;
+    font-family: Open Sans, sans serif;
+    letter-spacing: 1px;
+}
