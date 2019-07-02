@@ -2,16 +2,81 @@ html {
 	height: 100%;
 }
 
-body {
-    height: 100%;
-    background-repeat: no-repeat;
-    background: linear-gradient(to bottom right, #FFD5C2, #FC6074);
+div.content {
+    height: 100vh;
+    width: 100vw;
+    text-align: center;
+    color: #00494D;
+	background: url(../image/white_tiles_@2X-20.png), linear-gradient(to bottom right, #FFD5C2, #FC6074);
+}
+
+h1 {
+	font: bold 3em Open Sans, sans serif;
+	text-transform: uppercase;
+	letter-spacing: 3px;
+	text-shadow: 2px 2px 1px rgb(255, 213, 194, .4);
+	line-height: 1.1em;
+}
+
+h2 {
+	font: bold 1.4em Open Sans, sans serif;
 
 }
 
-h1, p {
-	text-align: center;
-    color: #00494D;
+p {
     font-family: Open Sans, sans serif;
-    letter-spacing: 1px;
+    margin: 10px 0 10px 0;
+}
+
+img.hero-circle {
+	width: 20%;
+	margin: 15px 0;
+	border: 3.5px solid #FFD5C2;
+	border-radius: 50%;
+	background-color: rgb(255, 213, 194, .35); /* same peach color, opacity 50% */
+}
+
+div.body-copy {
+	max-width: 55%;
+	min-width: 40%;
+	margin: 30px auto;
+	font-style: italic;
+	letter-spacing: .5px;
+	line-height:1.5em;
+}
+
+/*** footer styles ***/
+
+footer {
+	display: block;
+	position: fixed;
+	padding: 8px 0;
+	width: 100%;
+	left: 0;
+	bottom: 0;
+	color: #47855b;
+	background: #00494D;
+}
+
+/* footer links */
+
+footer p {
+	font-size: .8em;
+}
+
+footer a:link {
+	color: #47855b;
+}
+
+footer a:hover {
+	color: white;
+	text-decoration: none;
+}
+
+footer a:active {
+	color: #47855b;
+}
+
+a:visited {
+	color: #47855b;
 }
