@@ -11,7 +11,7 @@ div.content {
 }
 
 h1 {
-	font: bold 3em Open Sans, sans serif;
+	font: bold 3em 'Open Sans', sans-serif;
 	text-transform: uppercase;
 	letter-spacing: 3px;
 	text-shadow: 2px 2px 1px rgb(255, 213, 194, .4);
@@ -19,12 +19,12 @@ h1 {
 }
 
 h2 {
-	font: bold 1.4em Open Sans, sans serif;
+	font: bold 1.4em 'Open Sans', sans-serif;
 
 }
 
 p {
-    font-family: Open Sans, sans serif;
+    font-family: 'Open Sans', sans-serif;
     margin: 10px 0 10px 0;
 }
 
@@ -33,7 +33,7 @@ img.hero-circle {
 	margin: 15px 0;
 	border: 3.5px solid #FFD5C2;
 	border-radius: 50%;
-	background-color: rgb(255, 213, 194, .35); /* same peach color, opacity 50% */
+	background-color: rgb(255, 213, 194, .35); /* same peach color, opacity lowered */
 }
 
 div.body-copy {
@@ -62,13 +62,17 @@ footer {
 
 footer p {
 	font-size: .8em;
+
 }
 
-footer a:link {
+footer a {
+	font-size: .8em;
 	color: #47855b;
+	transition-duration: .5s;
 }
 
 footer a:hover {
+	font-size: .8em;
 	color: white;
 	text-decoration: none;
 }
