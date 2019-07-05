@@ -2,6 +2,10 @@ html {
 	height: 100%;
 }
 
+body {
+	font-size: 100%;
+}
+
 div.content {
     height: 100vh;
     width: 100vw;
@@ -28,7 +32,7 @@ p {
     margin: 10px 0 10px 0;
 }
 
-img.hero-circle {
+.hero-circle {
 	width: 20%;
 	margin: 15px 0;
 	border: 3.5px solid #FFD5C2;
@@ -36,7 +40,7 @@ img.hero-circle {
 	background-color: rgb(255, 213, 194, .35); /* same peach color, opacity lowered */
 }
 
-div.body-copy {
+.body-copy {
 	max-width: 55%;
 	min-width: 40%;
 	margin: 30px auto;
@@ -48,6 +52,7 @@ div.body-copy {
 /*** footer styles ***/
 
 footer {
+	font-size: .8em;
 	display: block;
 	position: fixed;
 	padding: 8px 0;
@@ -60,27 +65,13 @@ footer {
 
 /* footer links */
 
-footer p {
-	font-size: .8em;
-
-}
-
-footer a {
-	font-size: .8em;
+a, a:link, a:visited {
 	color: #47855b;
-	transition-duration: .5s;
+	text-decoration: underline;
+	transition-duration: 1s;
 }
 
-footer a:hover {
-	font-size: .8em;
+a:hover {
 	color: white;
 	text-decoration: none;
-}
-
-footer a:active {
-	color: #47855b;
-}
-
-a:visited {
-	color: #47855b;
 }
