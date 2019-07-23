@@ -10,6 +10,7 @@
 .utility-nav{
 	float: right;
 	font-family: 'Arial', sans-serif;
+	font-size: .8em;
 }
 
 .utility-nav a {
@@ -22,7 +23,7 @@
 .main-nav {
 	float: right;
 	font-family: 'Barlow Condensed', sans-serif;
-	font-size: 1.8em;
+	font-size: 1.7em;
 }
 
 .main-nav a {
@@ -41,8 +42,30 @@
 }
 
 .hero-section {
-	background: rgba(0,0,0,.1);
 	text-align: right;
+	background: rgba(0,0,0,.1);
+	background-image: url(../images/summer-eats-2019-banner.png);
+	background-size: 100%;
+	color: white;
+	padding: 50px 5%;
+}
+
+.hero-section a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	margin: 20px 0 0 0;
+	padding: 10px;
+	background-color: green;
+}
+
+.hero-section a:hover {
+	background-color:orange;
+}
+
+.hero-section h1 {
+	font-size: 2.85em;
+	font-family: 'Barlow Condensed', sans-serif;
 }
 
 .about-blurb-section {
