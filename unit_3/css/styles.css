@@ -1,0 +1,70 @@
+.nav-header {
+	width: 100%;
+	background-color: grey;
+}
+
+.nav-pb-logo{
+ 	left: 30px;
+}
+
+.utility-nav{
+	float: right;
+	font-family: 'Arial', sans-serif;
+}
+
+.utility-nav a {
+	display: block;
+	float:right;
+	padding: 2px 5px;
+	text-decoration: none;
+}
+
+.main-nav {
+	float: right;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.8em;
+}
+
+.main-nav a {
+	display: block;
+	float: right;
+	padding: 20px 10px;
+	text-decoration: none;
+}
+
+.main-nav a:hover {
+	color: ;
+}
+
+.hero-paragraph {
+	font-style: oblique;
+}
+
+.hero-section {
+	background: rgba(0,0,0,.1);
+	text-align: right;
+}
+
+.about-blurb-section {
+	text-align: center;
+}
+
+.cards-section {
+	background: rgba(0,0,0,.2);
+}
+
+.twitter-section {
+	background: rgba(0,0,0,.1);
+}
+
+.stats-section {
+	background: rgba(0,0,0,.2);
+}
+
+.main-footer {
+	background: rgba(0,0,0,.1);
+}
+
+.copywrite-footer {
+	background: rgba(0,0,0,.2);
+}
