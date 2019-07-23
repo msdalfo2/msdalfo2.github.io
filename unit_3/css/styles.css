@@ -10,7 +10,7 @@
 .utility-nav{
 	float: right;
 	font-family: 'Arial', sans-serif;
-	font-size: .8em;
+	font-size: .7em;
 }
 
 .utility-nav a {
@@ -18,6 +18,11 @@
 	float:right;
 	padding: 2px 5px;
 	text-decoration: none;
+	color:grey;
+}
+
+.utility-nav a:hover {
+	color: black;
 }
 
 .main-nav {
@@ -31,10 +36,12 @@
 	float: right;
 	padding: 20px 10px;
 	text-decoration: none;
+	color:grey;
 }
 
 .main-nav a:hover {
-	color: ;
+	color: green;
+	text-decoration: underline;
 }
 
 .hero-paragraph {
