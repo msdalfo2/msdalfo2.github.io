@@ -1,0 +1,161 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Barlow+Semi+Condensed|Libre+Baskerville&display=swap');
+
+/*
+font-family: 'Libre Baskerville', serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Barlow Semi Condensed', sans-serif;
+
+PB Green: #6EC72D
+PB Orange: #E35205
+
+*/
+
+ul {
+    list-style-type: none;
+}
+
+body {
+	color: grey;
+}
+
+h1, h2, h3 {
+	color: grey;
+	font-family: 'Barlow Condensed', sans-serif;
+	letter-spacing: .5px;
+}
+
+h1 {
+	font: 1em;
+}
+
+
+p {
+	font-family: 'Libre Baskerville', serif;
+}
+
+header {
+	display: block;
+}
+
+/** Navigation **/
+
+.nav-header {
+	width: 100%;
+}
+
+.nav-pb-logo{
+ 	padding: 10px;
+}
+
+.utility-nav {
+	margin: 10px 10px 0 0;
+	display: table;
+	float: right;
+	font-family: 'Arial', sans-serif;
+	font-size: .7em;
+}
+
+.utility-nav a {
+	float: right;
+	padding: 2px 5px;
+	text-decoration: none;
+	color:grey;
+}
+
+.utility-nav a:hover {
+	color: black;
+}
+
+.main-nav {
+	margin-top: 90px;
+	clear: both;
+	display: table;
+	float: right;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.7em;
+}
+
+.main-nav a {
+	padding: 20px 10px;
+	text-decoration: none;
+	color: grey;
+}
+
+.main-nav a:hover {
+	color: #6EC72D;
+	text-decoration: underline;
+}
+
+/** Hero/Rotator **/
+
+.hero-paragraph {
+	font-style: oblique;
+}
+
+.hero-section {
+	text-align: right;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../images/summer-eats-2019-banner.png);
+	background-size: 100%;
+	color: white;
+	padding: 50px 5%;
+}
+
+.hero-section a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	margin: 20px 0 0 0;
+	padding: 10px 20px;
+	border-radius: 2px;
+	background-color: #6EC72D;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.hero-section a:hover {
+	background-color: #E35205;
+}
+
+.hero-section h1 {
+	font-size: 2.85em;
+	color: white;
+}
+
+.about-blurb-section {
+	text-align: center;
+	padding: 10px 8%;
+}
+
+.about-blurb-section p {
+	letter-spacing: 1px;
+}
+
+.blurb-anchor {
+	font-family: 'Barlow Condensed', sans-serif;
+	color: #E35205;
+	font-weight: 700;
+}
+
+.blurb-anchor a:hover {
+	color: #6EC72D;
+}
+
+
+.cards-section {
+	background: rgba(0,0,0,.2);
+}
+
+.twitter-section {
+	background: rgba(0,0,0,.1);
+}
+
+.stats-section {
+	background: rgba(0,0,0,.2);
+}
+
+.main-footer {
+	background: rgba(0,0,0,.1);
+}
+
+.copywrite-footer {
+	background: rgba(0,0,0,.2);
+}
