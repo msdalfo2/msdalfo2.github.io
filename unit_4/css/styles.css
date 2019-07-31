@@ -120,18 +120,23 @@ header {
 	color: white;
 }
 
+/* About Burb */
+
 .about-blurb-section {
 	text-align: center;
-	padding: 10px 8%;
+	padding: 8px 8%;
+	background-color: #E35205;
 }
 
 .about-blurb-section p {
 	letter-spacing: 1px;
+	line-height: 1.5em;
+	color: white;
 }
 
 .blurb-anchor {
 	font-family: 'Barlow Condensed', sans-serif;
-	color: #E35205;
+	color: white;
 	font-weight: 700;
 }
 
