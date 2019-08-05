@@ -2,42 +2,40 @@
 <html lang="en-US">
 <head>
 	<title>Project Bread: Committed to preventing and ending hunger in Massachusetts</title>
-	<link rel="stylesheet" href="css/reset.css">
 	<link rel="stylesheet" href="css/styles.css">
+	<link rel="stylesheet" href="css/flickity.css" media="screen">
 </head>
 
 <body>
-
+	<script src="js/flickity-docs.js"></script>
 	<header>
-		<div class="nav-header">
-		<div class="google-translate-bar">
-			<!-- ///HERE'S THE SNIPPET I HAVE FROM GOOGLE///
+		<!-- ///HERE'S THE SNIPPET I HAVE FROM GOOGLE///
 			<div id="google_translate_element"></div><script type="text/javascript">
 			function googleTranslateElementInit() {
 			  new google.translate.TranslateElement({pageLanguage: 'en', includedLanguages: 'es,pt,zh-CN,zh-TW', layout: google.translate.TranslateElement.InlineLayout.HORIZONTAL}, 'google_translate_element');
 			}
 			</script>
 			<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
-			-->
-		</div>
+		-->
 
 		<img class="nav-pb-logo" title="" alt="Project Bread logo" src="./images/pb-logo-transparent.png">
 
-		<section class="utility-nav">
-			<a href="#">Store</a>
-			<a href="#">Sign Up</a>
-			<a href="#">Log In</a>
-			<a class="top-donate" href="#">Donate Today</a>
-			<a href="#">Search</a>
-		</section>
-		
-		<nav class="main-nav" role="navigation">
-			<a href="#">What We Do</a>
-			<a href="#">Get Involved</a>
-			<a href="#">Get The Facts</a>
-			<a href="#">Ways To Give</a>
-			<a href="#">Get Help</a>
-		</nav>
+		<div class="full-nav clearfix">
+			<section class="utility-nav">
+				<a href="#">Store</a>
+				<a href="#">Sign Up</a>
+				<a href="#">Log In</a>
+				<a class="top-donate" href="#">Donate Today</a>
+				<a href="#">Search</a>
+			</section>
+			
+			<nav class="main-nav" role="navigation">
+				<a href="#">What We Do</a>
+				<a href="#">Get Involved</a>
+				<a href="#">Get The Facts</a>
+				<a href="#">Ways To Give</a>
+				<a href="#">Get Help</a>
+			</nav>
 		</div>
 	</header>
 
@@ -55,35 +53,44 @@
 		<p><a class="blurb-anchor" href="#about-full-section">Anchor link to the bottom ></a></p>
 	</section>
 
-	<section class="cards-section">
+<!-- THIS IS THE TESTING AREA FOR THE CAROUSELS -->
+
+
+
+
+<!-- THIS IS THE TESTING AREA FOR THE CAROUSELS -->
+
+	<h2>What We Do</h2>
+
+	<section class="cards-section clearfix" data-flickity='{ "cellAlign": "left", "contain": true }'>
 	<!-- //// Gotta figure out how to get different stats appearing here //// -->
-		<h2>What We Do</h2>
+	
 		<div class="cards">
-			<img class="cards-icons" alt="" src="#">
+			<div class="cards-icons"></div>
 			<h3>Achieve Results At Scale</h3>
 			<p>Lorem ipsum dolor</p>
 			<a class="cards-button" href="#">Learn More</a>
 		</div>
 		<div class="cards">
-			<img class="cards-icons" alt="" src="#">
+			<div class="cards-icons"></div>
 			<h3>Inform Public Policy</h3>
 			<p>Lorem ipsum dolor</p>
 			<a class="cards-button" href="#">Learn More</a>
 		</div>
 		<div class="cards">
-			<img class="cards-icons" alt="" src="#">
+			<div class="cards-icons"></div>
 			<h3>Increase Access</h3>
 			<p>Lack of adequate nutrition negatively effects a person’s mental and physical health - and their ability to learn and contribute. Our work provides critical access to affordable, nutritious food that can help break the cycle of food insecurity.</p>
 			<a class="cards-button" href="#">Learn More</a>
 		</div>
 		<div class="cards">
-			<img class="cards-icons" alt="" src="#">
+			<div class="cards-icons"></div>
 			<h3>Build Partnerships</h3>
 			<p>Lorem ipsum dolor</p>
 			<a class="cards-button" href="#">Learn More</a>
 		</div>
 		<div class="cards">
-			<img class="cards-icons" alt="" src="#">
+			<div class="cards-icons"></div>
 			<h3>Walk For Hunger</h3>
 			<p>Lorem ipsum dolor</p>
 			<a class="cards-button" href="#">Learn More</a>
@@ -91,12 +98,14 @@
 	</section>
 
 	<section class="blog-section">
+		<div class="clearfix"> 
 		<h2>The Latest</h2>
 		<a class="more-link" href="#">More News</a>
+	</div>
 
 		<article>
-			<h4 class="blog-title">Blog Title 1</h4>
-			<p class="blog-snip">Lorem</p>
+			<h4 class="blog-title">Voices of Hunger in Rural Massachusetts</h4>
+			<p class="blog-snip">Mechelle picks up an apple and turns it over in her hand. A small brown spot here and there, she places it in her shopping cart and turns to her mother, “There's really nothing wrong with this.” It was their monthly visit to a grocery store in Greenfield...</p>
 			<a class="blog-button">Read More</a>
 		</article>
 
@@ -233,7 +242,6 @@
 			<p><a href="#">Terms & Conditions</a> | <a href="#">Sitemap</a></p>
 		</div>
 	</footer>
-
 
 </body>
 </html>
