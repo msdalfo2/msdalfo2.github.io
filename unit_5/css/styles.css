@@ -446,3 +446,34 @@ article a:hover {
 .copywrite-footer {
 	background: rgba(0,0,0,.2);
 }
+
+
+
+
+/* CLASS CODE */
+
+header {
+    background-color: #FFED74;
+    border: 1px black solid;
+    padding: 5px;
+}
+nav {
+    background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 5px;
+}
+article {
+    background-color: #E89C6C;
+    border: 1px black solid;
+    padding: 5px;
+}
+footer {
+    background-color: #FF957E;
+    border: 1px black solid;
+    padding: 5px;
+}
+div {
+    background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 5px;
+}
