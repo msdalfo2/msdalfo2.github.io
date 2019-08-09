@@ -202,7 +202,7 @@ header > * {
 }
 
 .cards {
-	width: 40%;
+	width: 38%;
 	text-align: center;
 	margin: 10px;
 	padding: 20px;
@@ -236,7 +236,7 @@ header > * {
 
 .cards-icons {
 	display: inline-block;
-	margin: auto 0;
+	margin: auto;
 	width: 60px;
 	height: 60px;
 	background-color: grey;
@@ -432,12 +432,13 @@ article .blog-button {
 .main-footer {
 	background: rgba(0,0,0,.1);
 	padding: 0 10px;
+	font-size: .7em;
 }
 
 .copywrite-footer {
 	background: rgba(0,0,0,.2);
 	text-align: center;
-	font-size: .8em;
+	font-size: .7em;
 	padding: 8px;
 }
 
@@ -445,6 +446,10 @@ article .blog-button {
 	float:left;
 	width: 15%;
 	margin: 2% .5%;
+}
+
+.footer-column a {
+	display:block;
 }
 
 .footer-pb-logo {
