@@ -268,7 +268,7 @@ article a {
 }
 
 article a:hover {
-	color: #6EC72D;
+	color: #6EC72D; /* green */
 }
 
 article p {
@@ -284,12 +284,13 @@ article .blog-button {
 	text-transform: uppercase;
 	padding: 8px 18px;
 	border-radius: 2px;
-	background-color: #6EC72D;
+	background-color: #6EC72D; /* green */
 	font-family: 'Barlow Semi Condensed', sans-serif;
 }
 
-article a:hover {
-	background-color: #E35205;
+.blog-button:hover {
+	background-color: #E35205; /* orange */
+	color: white;
 }
 
 /* Twitter Feed */
