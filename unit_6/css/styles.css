@@ -168,9 +168,8 @@ header > * {
 .about-blurb-section {
 	width: 100%;
 	text-align: center;
-	padding: 10px 8%;
-	background-color: white;
-	border: 0px 0px 6px 0px solid #E35205;
+	padding: 17px 8%;
+	border-top: 10px solid #E35205;
 }
 
 .about-blurb-section p {
@@ -191,12 +190,12 @@ header > * {
 /* WHAT WE DO // Cards Section */
 
 .cards-section-wrapper {
-	background-color: #cbe4c0;
+	background-color: #d9ead1;
 	padding: 20px;
 }
 
 .cards-section {
-	background: #cbe4c0;
+	background: #d9ead1;
 	height: 100%;
 	padding: 20px 0;
 	font-size: .9em;
