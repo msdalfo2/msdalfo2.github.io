@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css?family=Barlow+Condensed|Barlow+Semi+Condensed|Libre+Baskerville&display=swap');
+
+/*
+font-family: 'Libre Baskerville', serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Barlow Semi Condensed', sans-serif;
+
+PB Green: #6EC72D
+PB Orange: #E35205
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+ul {
+    list-style-type: none;
+}
+
+body {
+	color: grey;
+	font-size: 18px;
+}
+
+h1, h2, h3 {
+	color: grey;
+	font-family: 'Barlow Condensed', sans-serif;
+	letter-spacing: .5px;
+}
+
+h1 {
+	font-size: 2.85em;
+}
+
+h2 {
+	font-size: 1.9em;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 1.5em;
+}
+
+
+p {
+	font-family: 'Libre Baskerville', serif;
+	padding-bottom: 10px;
+}
+
+header {
+	display: block;
+	width: 100%;
+}
+
+a {
+	color: #E35205;
+}
+
+/* *****TROUBLESHOOTING BORDERS***** 
+header > * > * > * {
+	border: 1px solid black;
+}
+header > * > * {
+	border: 1px solid black;
+}
+header > * {
+	border: 1px solid black;
+}
+*/
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+/** Navigation **/
+
+.nav-pb-logo {
+ 	padding: 15px 20px;
+ 	width: 20%;
+}
+
+.full-nav {
+	float: right;
+	margin: 0 10px 20px 0;
+}
+
+.utility-nav {
+	font-family: 'Arial', sans-serif;
+	font-size: .6em;
+	float: right;
+}
+
+.utility-nav a {
+	padding: 10px 5px;
+	text-decoration: none;
+	color: grey;
+}
+
+.utility-nav a:hover {
+	color: black;
+}
+
+.top-donate {
+
+}
+
+.main-nav {
+	margin-top: 100px;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.5em;
+	text-align: right;
+}
+
+.main-nav a {
+	padding: 10px;
+	text-decoration: none;
+	color: grey;
+}
+
+.main-nav a:hover {
+	color: #6EC72D;
+	text-decoration: underline;
+}
+
+/** Hero/Rotator **/
+
+.hero-header {
+	padding-bottom: 5px;
+}
+
+.hero-paragraph {
+	font-style: oblique;
+}
+
+.hero-section {
+	text-align: right;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../images/summer-eats-2019-banner.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: white;
+	padding: 80px 5%;
+}
+
+.hero-section h1 {
+	color: white;
+	line-height: .9em;
+	margin: 0 0 10px 0;
+	/* width: 50%; */
+}
+
+.hero-section a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 5px 0 0 0;
+	padding: 10px 20px;
+	border-radius: 2px;
+	background-color: #6EC72D;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+.hero-section a:hover {
+	background-color: #E35205;
+}
+
+/* About Blurb */
+
+.about-blurb-section {
+	width: 100%;
+	text-align: center;
+	font-size: .8em;
+	padding: 17px 8%;
+	border-top: 10px solid #E35205;
+}
+
+.about-blurb-section p {
+	letter-spacing: .8px;
+	line-height: 1.5em;
+	color: #E35205;
+}
+
+.blurb-anchor {
+	text-transform: uppercase;
+	font-size: .6em;
+}
+
+.blurb-anchor a:hover {
+	color: white;
+}
+
+/* WHAT WE DO // Cards Section */
+
+.cards-section-wrapper {
+	background-color: #d9ead1;
+	padding: 20px;
+}
+
+.cards-section {
+	background: #d9ead1;
+	height: 100%;
+	padding: 20px 0;
+	font-size: .9em;
+}
+
+.cards {
+	width: 38%;
+	text-align: center;
+	margin: 10px;
+	padding: 20px;
+	background-color: white;
+	box-shadow: 0px 0px 3px 3px rgba(0,0,0,.05);
+}
+
+.cards p {
+	line-height: 1.5em;
+}
+
+.cards h3 {
+	margin: 3px 0px;
+}
+
+.cards a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 10px 0 10px 0;
+	padding: 10px 20px;
+	border-radius: 2px;
+	background-color: #6EC72D;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.cards a:hover {
+	background-color: #E35205;
+}
+
+.cards-icons {
+	display: inline-block;
+	margin: auto;
+	width: 60px;
+	height: 60px;
+	background-color: grey;
+	border-radius: 50%;
+}
+
+/* THE LATEST // Blog */
+
+.blog-section {
+	background-color: #E8E8E8;
+	padding: 20px;
+}
+
+.blog-section h2 {
+	float: left;
+}
+
+.more-link {
+	display: inline-block;
+	float: right;
+}
+
+.blog-section article {
+	display: block;
+	background-color: white;
+	margin: 0 0 10px 0;
+	padding: 25px;
+	border: 10px solid #E8E8E8;
+}
+
+article h4 {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+article a {
+	text-decoration: none;
+}
+
+article a:hover {
+	color: #6EC72D; /* green */
+}
+
+article p {
+	padding: 5px 0 15px 0;
+	font-size: .75em;
+}
+
+article .blog-button {
+	display: inline-block;
+	float: right;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 8px 18px;
+	border-radius: 2px;
+	background-color: #6EC72D; /* green */
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.blog-button:hover {
+	background-color: #E35205; /* orange */
+	color: white;
+}
+
+/* Twitter Feed */
+
+
+.twitter-section {
+	background: #F5F5F5;
+	padding: 20px;
+}
+
+.twitter-section h2 {
+	float: left;
+}
+
+.twitter-section a {
+	float: right;
+}
+
+
+/* Statistics */
+
+.stats-section {
+	background: rgba(0,0,0,.2);
+}
+
+.stats-section a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 15px;
+	padding: 8px 18px;
+	border-radius: 2px;
+	background-color: #6EC72D;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.stats-section a:hover {
+	background-color: #E35205;
+}
+
+.stat p {
+	display: inline-block;
+	width: 20%;
+}
+
+.stat-large-text {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-weight: 800;
+	font-size: 3em;
+	display: block;
+	text-transform: uppercase;
+}
+
+/* LEFT */
+
+.stat-picture-left-container {
+	width: 100%;
+	background-color: #643477;
+	color: white;
+}
+
+.stat-picture-left-image {
+	width: 50%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.stat-picture-left-image img {
+	width: 100%;
+	display: block;
+}
+
+.stat-right {
+	width: 50%;
+	float: right;
+	padding: 3%;
+}
+
+/* RIGHT */
+
+.stat-picture-right-container {
+	width: 100%;
+	background-color: #643477;
+	color: white;
+	float: right;
+}
+
+.stat-picture-right-image {
+	width: 50%;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.stat-picture-right-image img {
+	width: 100%;
+	display: block;
+}
+
+.stat-left {
+	width: 50%;
+	float: left;
+	padding: 3%;
+	text-align: right;
+}
+
+/* Bottom About Area */
+
+#about-full-section {
+	width: 100%;
+	font-size: .8em;
+	text-align: center;
+	background-color: white;
+	padding: 4% 8%;
+}
+
+#about-full-section p {
+	letter-spacing: .8px;
+	line-height: 1.5em;
+	color: #E35205;
+}
+
+#about-full-section h3 {
+	margin-bottom: 20px;
+}
+
+
+/* Footer */
+
+.main-footer {
+	background: rgba(0,0,0,.1);
+	padding: 0 10px;
+	font-size: .7em;
+	font-family: Arial, sans-serif;
+	line-height: 1.5em;
+		border-top: 10px solid #E35205;
+}
+
+.main-footer p {
+	font-family: Arial, sans-serif;
+}
+
+.copywrite-footer {
+	background: rgba(0,0,0,.2);
+	text-align: center;
+	font-size: .7em;
+	padding: 8px;
+}
+
+.copywrite-footer p {
+	font-family: Arial, sans-serif;
+}
+
+.footer-column {
+	float: left;
+	width: 15%;
+	margin: 2% .5%;
+}
+
+.footer-column a {
+	display: block;
+}
+
+.footer-pb-logo {
+	width: 80%;
+}
+
+
+/* UTILITY NAV HOVER TEST CODE */
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #E35205;
+  color: white;
+  padding: 8px;
+  border: none;
+}
+
+.dropbtn a {
+	color: white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #be4403;
+	min-width: 93px;
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  	color: white;
+  	padding: 12px 10px;
+  	text-decoration: none;
+  	display: block;
+  	border-bottom: #E35205 solid 1px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #be4403;
+  	/* border-bottom: #E35205 solid 1px; */
+  	}
+
+.dropbtn:first-child {
+  	border-bottom: #E35205 solid 1px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: #be4403;
+	color: white;
+  	border-bottom: #E35205 solid 1px;
+}
+
+
+/* CLASS CODE 
+
+header {
+    background-color: #FFED74;
+    border: 1px black solid;
+    padding: 5px;
+}
+nav {
+    background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 5px;
+}
+article {
+    background-color: #E89C6C;
+    border: 1px black solid;
+    padding: 5px;
+}
+footer {
+    background-color: #FF957E;
+    border: 1px black solid;
+    padding: 5px;
+}
+div {
+    background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 5px;
+} */
