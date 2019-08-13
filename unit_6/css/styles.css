@@ -35,15 +35,18 @@ h1 {
 	font-size: 2.85em;
 }
 
+h2 {
+	font-size: 1.9em;
+}
+
 h3 {
 	text-transform: uppercase;
-	font-size: 1.4em;
+	font-size: 1.5em;
 }
 
 
 p {
 	font-family: 'Libre Baskerville', serif;
-	font-size: .8em;
 	padding-bottom: 10px;
 }
 
@@ -79,13 +82,14 @@ header > * {
 
 /** Navigation **/
 
-.nav-pb-logo{
- 	padding: 10px;
+.nav-pb-logo {
+ 	padding: 15px 20px;
+ 	width: 20%;
 }
 
 .full-nav {
 	float: right;
-	margin: 10px 10px 10px 0;
+	margin: 0 10px 20px 0;
 }
 
 .utility-nav {
@@ -95,24 +99,28 @@ header > * {
 }
 
 .utility-nav a {
-	padding: 2px 5px;
+	padding: 10px 5px;
 	text-decoration: none;
-	color:grey;
+	color: grey;
 }
 
 .utility-nav a:hover {
 	color: black;
 }
 
+.top-donate {
+
+}
+
 .main-nav {
-	margin-top: 90px;
+	margin-top: 100px;
 	font-family: 'Barlow Condensed', sans-serif;
 	font-size: 1.5em;
 	text-align: right;
 }
 
 .main-nav a {
-	padding: 15px 10px;
+	padding: 10px;
 	text-decoration: none;
 	color: grey;
 }
@@ -138,7 +146,14 @@ header > * {
 	background-repeat: no-repeat;
 	background-size: 100%;
 	color: white;
-	padding: 50px 5%;
+	padding: 80px 5%;
+}
+
+.hero-section h1 {
+	color: white;
+	line-height: .9em;
+	margin: 0 0 10px 0;
+	/* width: 50%; */
 }
 
 .hero-section a {
@@ -146,7 +161,7 @@ header > * {
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
-	margin: 15px 0 0 0;
+	margin: 5px 0 0 0;
 	padding: 10px 20px;
 	border-radius: 2px;
 	background-color: #6EC72D;
@@ -158,16 +173,12 @@ header > * {
 	background-color: #E35205;
 }
 
-.hero-section h1 {
-
-	color: white;
-}
-
 /* About Blurb */
 
 .about-blurb-section {
 	width: 100%;
 	text-align: center;
+	font-size: .8em;
 	padding: 17px 8%;
 	border-top: 10px solid #E35205;
 }
@@ -357,7 +368,7 @@ article .blog-button {
 
 .stat-picture-left-container {
 	width: 100%;
-	background-color: green;
+	background-color: #643477;
 	color: white;
 }
 
@@ -383,7 +394,7 @@ article .blog-button {
 
 .stat-picture-right-container {
 	width: 100%;
-	background-color: green;
+	background-color: #643477;
 	color: white;
 	float: right;
 }
@@ -411,6 +422,7 @@ article .blog-button {
 
 #about-full-section {
 	width: 100%;
+	font-size: .8em;
 	text-align: center;
 	background-color: white;
 	padding: 4% 8%;
@@ -433,6 +445,13 @@ article .blog-button {
 	background: rgba(0,0,0,.1);
 	padding: 0 10px;
 	font-size: .7em;
+	font-family: Arial, sans-serif;
+	line-height: 1.5em;
+		border-top: 10px solid #E35205;
+}
+
+.main-footer p {
+	font-family: Arial, sans-serif;
 }
 
 .copywrite-footer {
@@ -442,20 +461,86 @@ article .blog-button {
 	padding: 8px;
 }
 
+.copywrite-footer p {
+	font-family: Arial, sans-serif;
+}
+
 .footer-column {
-	float:left;
+	float: left;
 	width: 15%;
 	margin: 2% .5%;
 }
 
 .footer-column a {
-	display:block;
+	display: block;
 }
 
 .footer-pb-logo {
 	width: 80%;
 }
 
+
+/* UTILITY NAV HOVER TEST CODE */
+
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #E35205;
+  color: white;
+  padding: 8px;
+  border: none;
+}
+
+.dropbtn a {
+	color: white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #be4403;
+	min-width: 93px;
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  	color: white;
+  	padding: 12px 10px;
+  	text-decoration: none;
+  	display: block;
+  	border-bottom: #E35205 solid 1px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #be4403;
+  	/* border-bottom: #E35205 solid 1px; */
+  	}
+
+.dropbtn:first-child {
+  	border-bottom: #E35205 solid 1px;
+}
+
+/* Show the dropdown menu on hover */
+.dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.dropdown:hover .dropbtn {
+	background-color: #be4403;
+	color: white;
+  	border-bottom: #E35205 solid 1px;
+}
 
 
 /* CLASS CODE 
