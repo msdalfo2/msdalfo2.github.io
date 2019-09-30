@@ -6,19 +6,35 @@
 	<link href="https://fonts.googleapis.com/css?family=Barlow+Condensed|Barlow+Semi+Condensed:400,500,600|Libre+Baskerville&display=swap" rel="stylesheet">
 	<script src="https://kit.fontawesome.com/e7e0928144.js"></script>
 
-	<link rel="stylesheet" href="css/flickity.css" media="screen">
-
-	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<!--<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet">
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>-->
 	<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
-	<link rel="stylesheet" href="css/styles.css">
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.js"></script>
+    <!--<script src="assets/js/plugins/jquery.meanmenu.js"></script>-->
+
+    <!--<script>
+		function myFunction() {
+		  var x = document.getElementById("my-top-nav"); //
+		  if (x.className === "main-nav") {
+		    x.className += ", responsive";
+		  } else {
+		    x.className = "main-nav";
+		  }
+		}
+	</script>-->
+
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/flickity.css" media="screen">
+    <!--<link rel="stylesheet" href="meanmenu.css" media="all" />-->
 
 	<meta name="viewport" content="width=device-width, initialscale=1">
 </head>
 
 <body>
 	<script src="js/flickity-docs.js"></script>
-	<header>
+
+<header>
 		<!-- ///HERE'S THE SNIPPET I HAVE FROM GOOGLE///
 			<div id="google_translate_element"></div><script type="text/javascript">
 			function googleTranslateElementInit() {
@@ -27,39 +43,80 @@
 			</script>
 			<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>
 		-->
+		<span class="logo-wrapper">
+			<img class="nav-pb-logo" title="" alt="Project Bread logo" src="./images/pb-logo-transparent.png">
+		</span>
 
-		<img class="nav-pb-logo" title="" alt="Project Bread logo" src="./images/pb-logo-transparent.png">
-
-		<a href="#main-menu" class="menu-toggle">
+		<!-- <a href="#main-menu" class="menu-toggle">
     		<span class="fa fa-bars"></span>
-  		</a>
-  		
-		<div class="full-nav clearfix">
-			<section class="utility-nav clearfix">
-				<a href="#">Store</a>
-				<a href="#">Sign Up</a>
-				<a href="#">Log In</a>
-				<div class="donate-dropdown">
- 					<div class="dropbtn"><a href="#">Donate Today</a></div>
-  						<div class="dropdown-content">
-						    <a href="#">One Time</a>
-						    <a href="#">Monthly</a>
+  		</a> -->
+
+<!-- DESKTOP NAVIGATION START -->
+		<span class="full-nav clearfix">
+
+			<span class="utility-nav clearfix">
+				<ul>
+					<li><a href="#">Store</a></li>
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Log In</a></li>
+					<li>
+						<div class="donate-dropdown">
+	 					<div class="dropbtn"><a href="#">Donate Today</a></div>
+	  						<div class="dropdown-content">
+							    <a href="#">One Time</a>
+							    <a href="#">Monthly</a>
+							</div>
 						</div>
-				</div>
-				<a href="#">
-					<i class="fas fa-search"></i>
-				</a>
-			</section>
-			
-			<nav class="main-nav clearfix" role="navigation">
-				<a href="#">What We Do</a>
-				<a href="#">Get Involved</a>
-				<a href="#">Get The Facts</a>
-				<a href="#">Ways To Give</a>
-				<a href="#">Get Help</a>
+					</li>
+					<li>
+						<a href="#">
+							<i class="fas fa-search"></i>
+						</a>
+					</li>
+				</ul>
+			</span>
+
+			<nav class="main-nav clearfix" id="my-top-nav" role="navigation">
+
+				<ul>
+					<li><a href="#">What We Do</a></li>
+					<li><a href="#">Get Involved</a></li>
+					<li><a href="#">Get The Facts</a></li>
+					<li><a href="#">Ways To Give</a></li>
+					<li><a href="#">Get Help</a></li>
+				</ul>
+
 			</nav>
-		</div>
-	</header>
+<!-- DESKTOP NAVIGATION END -->
+
+<!-- MOBILE NAVIGATION -->
+			<div class="mobile-dropdown">
+				<button class="mobile-dropbtn"><i class="fa fa-bars"></i></button>
+				<div class="mobile-dropdown-content">
+				<ul id="nav1">
+					<li><a href="#">What We Do</a></li>
+					<li><a href="#">Get Involved</a></li>
+					<li><a href="#">Get The Facts</a></li>
+					<li><a href="#">Ways To Give</a></li>
+					<li><a href="#">Get Help</a></li>
+				</ul>
+				<div class="nav2-wrapper">
+				<ul id="nav2">
+					<li><a href="#">Store</a></li>
+					<li><a href="#">Sign Up</a></li>
+					<li><a href="#">Login</a></li>
+					<li><a href="#">Donate</a></li>
+					<li><a href="#">Search</a></li>
+				</ul>
+			</div>
+				  </div>
+			</div>
+
+		</span>
+
+<!-- MOBILE NAVIGATION END -->
+
+</header>
 
 <main>
 	<section class="hero-section">
@@ -73,44 +130,37 @@
 		<p><a class="blurb-anchor" href="#about-full-section">Until Hunger Ends.&trade;</a></p>
 	</section>
 
-<!-- THIS IS THE TESTING AREA FOR THE CAROUSELS -->
-
-
-
-
-<!-- THIS IS THE TESTING AREA FOR THE CAROUSELS -->
-
 	<div class="cards-section-wrapper">
-	<h2>What We Do</h2>
-	<section class="cards-section clearfix" data-flickity='{ "cellAlign": "left", "contain": true }'>
-	<!-- //// Gotta figure out how to get different stats appearing here //// -->
+		<h2>What We Do</h2>
+		<section class="cards-section clearfix" data-flickity='{ "cellAlign": "left", "contain": true }'>
+		<!-- //// Gotta figure out how to get different stats appearing here //// -->
 
 		<div class="cards">
-			<div class="cards-icons"></div>
+			<div class="cards-icons">icon wip</div>
 			<h3>Increase Access</h3>
 			<p>Lack of adequate nutrition negatively effects a person’s mental and physical health - and their ability to learn and contribute. Our work provides critical access to affordable, nutritious food that can help break the cycle of food insecurity.</p>
 			<a class="cards-button" href="#">Learn More</a>
 		</div>
 		<div class="cards">
-			<div class="cards-icons"></div>
+			<div class="cards-icons">icon wip</div>
 			<h3>Build Partnerships</h3>
 			<p>We believe the right partnerships and community investments mean life changing work to end hunger can happen through a shared commitment and approach.</p>
 			<a class="cards-button" href="#">Learn More</a>
 		</div>
 		<div class="cards">
-			<div class="cards-icons"></div>
+			<div class="cards-icons">icon wip</div>
 			<h3>Inform Public Policy</h3>
 			<p>We provide thought leadership to Massachusetts legislatures that promotes policy solutions for systematically reducing food insecurity.</p>
 			<a class="cards-button" href="#">Learn More</a>
 		</div>
 		<div class="cards">
-			<div class="cards-icons"></div>
+			<div class="cards-icons">icon wip</div>
 			<h3>Achieve Results At Scale</h3>
 			<p>Our approach to addressing hunger results in measurable statewide impact and transformative results.</p>
 			<a class="cards-button" href="#">Learn More</a>
 		</div>
 		<div class="cards">
-			<div class="cards-icons"></div>
+			<div class="cards-icons">icon wip</div>
 			<h3>Walk For Hunger</h3>
 			<p>Always on the 1st Sunday in May on Boston Common, Project Bread's Walk for Hunger is the longest-running community event in the country that raises awareness about hunger and funds to support programs across Massachusetts that help residents access food.</p>
 			<a class="cards-button" href="#">Learn More</a>
@@ -148,11 +198,11 @@
 
 	<section class="twitter-section">
 
-		<div class="twitter-section-wrapper"
-		<div class="twitter-header">
+		<div class="twitter-section-wrapper">
+		<!--<div class="twitter-header">
 			<h2>Twitter Feed</h2>
 			<a class="more-link" href="https://twitter.com/projectbread" target="_blank">@ProjectBread</a>
-		</div>
+		</div>-->
 
 		<div class="twitter-feed">
 			<a class="twitter-timeline" data-lang="en" data-width="700" data-height="470" data-link-color="#E35205" href="https://twitter.com/projectbread?ref_src=twsrc%5Etfw">Tweets by projectbread</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
@@ -209,7 +259,7 @@
 
 		<p>Project Bread is committed to preventing and ending hunger in Massachusetts. We provide access to food for people who are hungry today while working to break the cycle of hunger through advocacy, education, and community action.</p>
 
-		<p>With the support of our partners, donors, corporate sponsors, individuals—and tens of thousands of Walkers—we work to break the cycle of hunger and poverty by devising, funding, advocating for, and facilitating solutions that change lives across the Commonwealth. As the only statewide anti-hunger organization, we listen and learn, identify needs and opportunities, and connect people, resources, and programs—in ways both tried and new.</p>
+		<p class="hide-m">With the support of our partners, donors, corporate sponsors, individuals—and tens of thousands of Walkers—we work to break the cycle of hunger and poverty by devising, funding, advocating for, and facilitating solutions that change lives across the Commonwealth. As the only statewide anti-hunger organization, we listen and learn, identify needs and opportunities, and connect people, resources, and programs—in ways both tried and new.</p>
 
 		<a class="blurb-anchor" href="#">Click Here to Learn More</a>
 	</section>
@@ -225,20 +275,15 @@
 
 			<div class="footer-column">
 				<h4>Project Bread</h4>
-					<a href="#">The Walk for Hunger&#174;</a>
+				<h4>The Walk for Hunger&#174;</h4>
 					<address>
 						145 Border Street
 						East Boston, MA
 						02128-1903
 					</address>
-					<h4>Tel:</h4><a href="tel:1-617-723-5000">
-						617-723-5000
-					</a>
-					<h4>Fax:</h4><a href="fax:1-617-248-8877">
-						617-248-8877
-					</a>
-					<p><a href="mailto:info@projectbread.org">
-						info@projectbread.org
+					
+					<p><a href="#">
+						Contact Us
 					</a></p>
 			</div>
 

@@ -38,7 +38,7 @@ ul {
 }
 
 li {
-	display: inline-block;
+	/* display: inline-block; */
 }
 
 body {
@@ -131,6 +131,10 @@ header > * {
 
 .logo-wrapper {
 	padding: 0 0 0 3%;
+}
+
+.full-nav li {
+	display: inline-block;
 }
 
 .full-nav {
@@ -457,7 +461,7 @@ article .blog-button {
 
 .twitter-section {
 	background: #F5F5F5;
-	padding: 20px 15px 40px 15px;
+	padding: 30px 15px 30px 15px;
 }
 
 .twitter-section-wrapper {
@@ -619,7 +623,7 @@ article .blog-button {
 	padding: 0 10px;
 	/* font-size: .7em; */
 	font-family: Arial, sans-serif;
-	line-height: 1.5em;
+	line-height: 1.4em;
 	border-top: 10px solid #E35205;
 }
 
@@ -631,20 +635,35 @@ article .blog-button {
 	width: 80%;
 }
 
+address {
+	font-size: 14px;
+}
+
+.footer-column h4 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
 .footer-column {
+	font-size: 14px;
 	float: left;
-	width: 15%;
-	margin: 2% .5%;
+	width: 14%;
+	margin: 2% 1.25%;
 }
 
 .footer-column a {
 	display: block;
+	font-size: 14px;
 }
 
-.footer-social-inline a{
+.footer-social-inline {
+	margin-top: 8px;
+}
+
+.footer-social-inline a {
 	display: inline;
-	font-size: 1.75em;
-	padding: 5px;
+	font-size: 1.5em;
+	padding: 5px 6px 5px 0;
 }
 
 .copyright-footer {
@@ -655,7 +674,7 @@ article .blog-button {
 }
 
 .copyright-footer p {
-	font-family: Arial, sans-serif;
+	font-family: arial, sans-serif;
 	margin: 0 auto;
 	padding: 0;
 }
@@ -738,11 +757,48 @@ div {
 	.stats-section p {
 		font-size: .7em;
 	}
+
+	.footer-column {
+		font-size: 16px;
+		line-height: 1.9em;
+	}
+
+	.footer-column h4 {
+		font-size: 20px;
+		margin: 10px 0 0 0;
+	}
+
+	.footer-social-inline a {
+	display: inline;
+	font-size: 1.6em;
+	padding: 0 5px 0 0;
+	}
+
 }
 
 @media only screen and (min-width: 770px) /*above 770*/
 {
+	.mobile-dropdown {
+		display:none;
+	}
+
 	.mobile-hamburger {
+		display: none;
+	}
+
+	.mobile-nav {
+		display:none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #fff;
+	}
+
+	.mobile-nav:target {
+		display:block;
+	}
+
+	#container {
 		display: none;
 	}
 
@@ -776,12 +832,96 @@ div {
 	}
 
 	.full-nav {
-		padding: 0 3.5% 0 0;
+		padding: 0 2% 0 0;
 	}
 
 	.main-nav {
 		display: none;
 	}
+
+			/****** NAV HAMBURGER START ******/
+			/*********************************/
+
+	/* Style The Dropdown Button */
+.mobile-dropbtn {
+	background-color: #E35205;
+	color: white;
+	padding: 18px 18px 19px 18px;
+	font-size: 1.5em;
+	border: none;
+	cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.mobile-dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.mobile-dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 96vw;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border-top: 4px solid #E35205;
+	z-index: 1;
+	right: 0;
+}
+
+/* Links inside the dropdown */
+.mobile-dropdown-content a {
+	color: #E35205;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.mobile-dropdown-content a:hover {
+	background-color: #6EC72D;
+	color: white;
+}
+
+/* Show the dropdown menu on hover */
+.mobile-dropdown:hover .mobile-dropdown-content {
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.mobile-dropdown:hover .mobile-dropbtn {
+	background-color: #6EC72D;
+}
+
+#nav1 {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-weight: 500;
+}
+
+#nav1 li {
+	display:block!important;
+	text-align: center;
+}
+
+.nav2-wrapper {
+	width: 100%;
+}
+
+#nav2 ul {
+	display: block;
+	margin: 0 auto;
+}
+
+#nav2 li {
+	display:inline-block!important;
+	font-size: .7em;
+	width:19%;
+	text-align:center;
+}
+
+			/******* NAV HAMBURGER END *******/
+			/*********************************/
 
 	.hero-section {
 		background-size: cover;
@@ -813,22 +953,31 @@ div {
 		font-size: .5em;
 	}
 
+	/* about, full */
+
+	#about-full-section {
+		padding: 8% 6%;
+	}
+
 	/* footer */
 
 	.main-footer h4 {
-		margin: 18px 0 0 0;
+		font-size: 1.3em;
+		margin: 9px 0 9px 0;
+
 	}
 
 	.footer-pb-logo {
-		margin: 15px 0;
-		width: 35%;
+		margin: 20px 0 5px 0;
+		width: 20%;
 	}
 
 	.footer-column {
 		float: none;
 		width: 100%;
 		text-align: center;
-		margin: .5% 0;
+		margin: 0;
+		padding: 0 0 10px 0;
 	}
 
 }
@@ -865,7 +1014,7 @@ div {
 		display: block;
 		left: auto;
 		top: auto;
-		margin: 3%;
+		margin: 3% 3% 0 3%;
 		transform: none;
 	}
 
@@ -970,6 +1119,13 @@ div {
 		height: 10%;
 		vertical-align: middle;
 	}
+
+	#nav2 li {
+	display:inline-block!important;
+	font-size: .5em;
+	width:18%;
+	text-align:center;
+}
 
 	.hero-section {
 		padding: 20px 4%;
@@ -1095,7 +1251,7 @@ div {
 	}
 
 	#about-full-section {
-		padding: 6% 6% 10% 6%;
+		padding: 10% 6% 10% 6%;
 	}
 
 	#about-full-section > p {
@@ -1114,19 +1270,18 @@ div {
 		padding: 15px;
 	}
 
-	.footer-column a {
-		font-size: .7em;
-		padding: 1px;
+	.footer-column {
+		font-size: .8em;
 	}
 
 	address {
-		font-size: .7em;
+		font-size: .8em;
 	}
 
 	.footer-social-inline a{
 	display: inline;
 	font-size: 1.5em;
-	padding: 5px;
+	padding: 0 6px 0 0;
 	}
 }
 
