@@ -26,7 +26,10 @@ Grey: #555555
 	margin: 0;
 	padding: 0;
 	box-sizing: border-box;
+}
 
+html {
+	scroll-behavior: smooth;
 }
 
 ul {
@@ -839,10 +842,6 @@ div {
 		display: none;
 	}
 
-	.full-nav {
-		padding: 0 2% 0 0;
-	}
-
 	.main-nav {
 		display: none;
 	}
@@ -879,12 +878,22 @@ div {
 }
 
 /* Links inside the dropdown */
-.mobile-dropdown-content a {
+.mobile-dropdown-content #nav1 a {
 	color: #E35205;
 	padding: 12px 16px;
 	text-decoration: none;
-	display: block;
+	display: block; FIND
 }
+
+	#nav2 a {
+		color: white;
+		padding: 12px 0px;
+		margin: 0;
+		text-decoration: none;
+		display: block;
+		text-transform: capitalize!important;
+		font-family: Arial, sans-serif;
+	}
 
 /* Change color of dropdown links on hover */
 .mobile-dropdown-content a:hover {
@@ -895,6 +904,7 @@ div {
 /* Show the dropdown menu on hover */
 .mobile-dropdown:hover .mobile-dropdown-content {
 	display: block;
+	color: white;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -913,7 +923,7 @@ div {
 }
 
 .nav2-wrapper {
-	width: 100%;
+	/*width: 100%;*/
 	background-color: #E35205;
 }
 
@@ -925,7 +935,7 @@ div {
 #nav2 li {
 	display:inline-block!important;
 	font-size: .5em;
-	width:19%;
+	width:20%;
 	text-align: center;
 }
 
@@ -1158,7 +1168,7 @@ div {
 	}
 
 	/* Links inside the dropdown */
-	.mobile-dropdown-content a {
+	.mobile-dropdown-content #nav1 a {
 		color: #E35205;
 		padding: 12px 16px;
 		text-decoration: none;
@@ -1179,6 +1189,7 @@ div {
 	/* Change the background color of the dropdown button when the dropdown content is shown */
 	.mobile-dropdown:hover .mobile-dropbtn {
 		background-color: #6EC72D;
+		color: white;
 	}
 
 	#nav1 {
@@ -1192,7 +1203,7 @@ div {
 	}
 
 	.nav2-wrapper {
-		width: 100%;
+		/*width: 100%;*/
 		background-color: #E35205;
 	}
 
@@ -1202,14 +1213,18 @@ div {
 	}
 
 	#nav2 li {
-	display:inline-block!important;
+	display:inline-block;
 	font-size: .5em;
-	width:18%;
+	width:20%;
 	text-align:center;
 	}
 
-	#nav2 li a {
+	#nav2 a {
 		color: white;
+		padding: 12px 0px;
+		margin: 0;
+		text-decoration: none;
+		display: block;
 		text-transform: capitalize!important;
 		font-family: Arial, sans-serif;
 	}
