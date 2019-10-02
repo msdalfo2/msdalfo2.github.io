@@ -1116,11 +1116,11 @@ div {
 		font-size: 1.45em;
 	}
 
-		/* Style The Dropdown Button */
+			/* Style The Dropdown Button */
 	.mobile-dropbtn {
 		background-color: #E35205;
 		color: white;
-		padding: 12px 12px 13px 12px;
+		padding: 8px 12px 10px 12px;
 		font-size: 1em;
 		border: none;
 		cursor: pointer;
