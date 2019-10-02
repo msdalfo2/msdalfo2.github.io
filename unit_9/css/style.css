@@ -1,0 +1,1293 @@
+/*
+
+font-family: 'Libre Baskerville', serif;
+font-family: 'Barlow Condensed', sans-serif;
+font-family: 'Barlow Semi Condensed', sans-serif;
+
+Light Green: #D7EFC5
+PB Green: #6EC72D
+Dark Green: #24490A
+
+Light Orange: #F7CFBA
+PB Orange: #E35205
+Dark Orange: #682603
+
+Light Purple: #D4C7D9
+PB Purple: #643477
+Header Purple: #492657
+
+*/
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+
+}
+
+ul {
+    list-style: none;
+    list-style-type: none;
+    /*margin-left: 0!important;
+    padding: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    margin-inline-start: 0;
+    margin-inline-end: 0;
+    padding-inline-start: 0; */
+}
+
+li {
+	/* display: inline-block; */
+}
+
+body {
+	color: grey;
+	font-size: 18px;
+}
+
+h1 {
+	font-size: 2.85em;
+	color: #492657;
+	font-family: 'Barlow Condensed', sans-serif;
+	letter-spacing: .025em;
+}
+
+h2 {
+	font-size: 1.9em;
+	color: #492657;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-weight: 500;
+	letter-spacing: .025em;
+}
+
+h3 {
+	text-transform: uppercase;
+	font-size: 1.4em;
+	margin: 0;
+	padding: 0;
+	color: #643477;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-weight: 500;
+	letter-spacing: .025em;
+	line-height: 1.2em;
+}
+
+h4 {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+p {
+	font-family: 'Libre Baskerville', serif;
+	padding-bottom: 1.5%;
+}
+
+header {
+	display: block;
+	width: 100%;
+}
+
+a {
+	color: #E35205; /* PB orange */
+}
+
+a:hover {
+	color: #492657; /* Header Purple */
+	text-decoration: none;
+	transition: 0.3s;
+}
+
+a:active {
+	text-decoration: none;
+}
+
+/* *****TROUBLESHOOTING BORDERS***** 
+header > * > * > * {
+	border: 1px solid black;
+}
+header > * > * {
+	border: 1px solid black;
+}
+header > * {
+	border: 1px solid black;
+}
+*/
+
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+
+/*** SECTION: Navigation ***/
+
+.nav-pb-logo {
+ 	padding: 1% 1% 1% 1%;
+ 	max-width: 18%;
+}
+
+.logo-wrapper {
+	padding: 0 0 0 3%;
+}
+
+.full-nav li {
+	display: inline-block;
+}
+
+.full-nav {
+	float: right;
+	padding: 0 2% 0 0;
+}
+
+/* Utility Nav: Start */
+
+.utility-nav {
+	font-family: 'Arial', sans-serif;
+	font-size: .65em;
+	float: right;
+}
+
+.utility-nav a {
+	padding: 10px;
+	text-decoration: none;
+	color: #E35205;
+}
+
+.utility-nav a:hover {
+	color: black;
+	transition: 0.3s;
+}
+
+/****** Utility Nav: Donate Button Hover Code ******/
+
+/* Dropdown Button */
+.dropbtn {
+  background-color: #E35205;
+  color: white;
+  padding: 8px;
+  border: none;
+}
+
+.dropbtn a {
+	color: white;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.donate-dropdown {
+  position: relative;
+  display: inline-block;
+  text-align: center;
+}
+
+.donate-dropdown a:hover {
+	color: white;
+	transition: 0.3s;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #be4403;
+	min-width: 108px;
+	z-index: 1;
+}
+
+/* Links inside the dropdown */
+.dropdown-content a {
+  	color: white;
+  	padding: 8px 10px;
+  	text-decoration: none;
+  	display: block;
+  	border-bottom: #E35205 solid 1px;
+}
+
+/* Change color of dropdown links on hover */
+.dropdown-content a:hover {
+	background-color: #E35205;
+	color: white;
+	transition: 0.3s;
+  	/* border-bottom: #E35205 solid 1px; */
+  	}
+
+.dropbtn:first-child {
+  	border-bottom: #E35205 solid 1px;
+}
+
+/* Show the dropdown menu on hover */
+.donate-dropdown:hover .dropdown-content {
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.donate-dropdown:hover .dropbtn {
+	background-color: #be4403;
+	color: white;
+  	border-bottom: #E35205 solid 1px;
+}
+
+/****** END Utility Nav: Donate Button Hover Code ******/
+
+/* Main  Nav: Start */
+
+.main-nav {
+	margin-top: 14%;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.5em;
+	text-align: right;
+}
+
+.main-nav a {
+	padding: 10px;
+	text-decoration: none;
+	color: grey;
+}
+
+.main-nav a:hover {
+	color: #6EC72D;
+	text-decoration: underline;
+	transition: 0.3s;
+}
+
+/*** SECTION: Hero "Rotator" ***/
+
+.hero-header {
+	padding-bottom: 5px;
+}
+
+.hero-paragraph {
+	font-style: oblique;
+}
+
+.hero-section {
+	text-align: right;
+	background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../images/summer-eats-2019-banner.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	color: white;
+	padding: 80px 5%;
+}
+
+.hero-section h1 {
+	color: white;
+	line-height: .9em;
+	margin: 0 0 10px 0;
+	/* width: 50%; */
+}
+
+.hero-section a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 5px 0 0 0;
+	padding: 10px 20px;
+	border-radius: 2px;
+	background-color: #6EC72D;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+
+}
+
+.hero-section a:hover {
+	background-color: #E35205;
+	transition: 0.3s;
+}
+
+/* About Blurb // Under Hero */
+
+.about-blurb-section {
+	width: 100%;
+	font-size: .8em;
+	padding: 3% 2%;
+	border-top: 10px solid #E35205;
+}
+
+.about-blurb-section p {
+	color: #643477; /*purp*/
+	max-width: 700px;
+	text-align: center;
+	letter-spacing: .8px;
+	line-height: 1.7em;
+	margin: 0 auto;
+}
+
+.blurb-anchor {
+	display: inline-block;
+	color: #E35205;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 10px auto 0 auto;
+	padding: 10px 20px;
+	border-radius: 2px;
+	border: 3px solid #E35205;
+}
+
+.blurb-anchor:hover {
+	text-decoration: none;
+	background-color: #E35205;
+	color: white;
+	transition-duration: 0.4s;
+}
+
+/*** SECTION What We Do // Cards Section ***/
+
+.cards-section-wrapper {
+	background-image: url(../images/spiration-light-tile-purple-trans20.png), linear-gradient(rgba(100, 52, 119, 1), rgba(185,144,201,1)); /*purp*/
+	padding: 20px 0px 40px 20px;
+}
+
+
+.cards-section {
+	height: 100%;
+	padding: 20px 0;
+}
+
+.cards {
+	width: 38%;
+	min-height: 100%;
+	text-align: center;
+	margin: 10px;
+	padding: 20px;
+	background-color: white;
+	box-shadow: 0px 0px 3px 3px rgba(0,0,0,.05);
+}
+
+.cards p {
+	line-height: 1.55em;
+	font-size: .8em;
+}
+
+.cards-section-wrapper h2 {
+	color: white;
+}
+
+.cards h3 {
+	margin: 3px 0px;
+}
+
+.cards a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin: 0px 0 10px 0;
+	padding: 10px 20px;
+	border-radius: 2px;
+	background-color: #6EC72D;
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.cards a:hover {
+	background-color: #E35205;
+	transition: 0.3s;
+}
+
+.cards-icons {
+	display: inline-block;
+	margin: auto;
+	width: 100px;
+	height: 100px;
+/*	background-color: purple;*/
+	border-radius: 50%;
+}
+
+.cards-icons img {
+	width: 100px;
+	hegith: 100px;
+}
+
+/*** THE LATEST // Blog Section ***/
+
+.blog-section-wrapper {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.blog-section {
+	background-color: #F7CFBA; /* light orange */
+	background-image: url(../images/food-pattern_2.png);
+	padding: 15px;
+}
+
+.blog-section h2 {
+	float: left;
+}
+
+.more-link {
+	display: inline-block;
+	float: right;
+	padding: 20px 0 0 0;
+}
+
+.blog-section article {
+	display: block;
+	background-color: white;
+	margin: 0 0 10px 0;
+	padding: 25px;
+	border: 20px solid #F7CFBA;
+}
+
+article a {
+	text-decoration: none;
+}
+
+article a:hover {
+	color: #6EC72D; /* green */
+	transition: 0.3s;
+}
+
+article p {
+	padding: 5px 0 22px 0;
+	font-size: .75em;
+}
+
+article .blog-button {
+	display: inline-block;
+	float: right;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	padding: 8px 18px;
+	border-radius: 2px;
+	background-color: #6EC72D; /* green */
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.blog-button:hover {
+	background-color: #E35205; /* orange */
+	color: white;
+}
+
+/*** Twitter Feed Section ***/
+
+
+.twitter-section {
+	background: #F5F5F5;
+	padding: 30px 15px 30px 15px;
+}
+
+.twitter-section-wrapper {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.twitter-section h2 {
+	float: left;
+}
+
+.more-link {
+	margin: 10px 0 0 0;
+}
+
+.twitter-header {
+	display: block;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+.twitter-feed {
+	display: block;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+
+/*** Statistics Right/Left Section ***/
+
+.stats-section {
+	background: #643477 url(../images/spiration-light-tile-purple.jpg); /*purp*/
+}
+
+.stat p {
+	display: inline-block;
+}
+
+.stat-large-text {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-weight: 800;
+	font-size: 3em;
+	display: block;
+	text-transform: uppercase;
+}
+
+.stats-section a {
+	display: inline-block;
+	color: white;
+	text-decoration: none;
+	text-transform: uppercase;
+	margin-top: 10px;
+	padding: 8px 18px;
+	border-radius: 2px;
+	background-color: #6EC72D; /* PB Green*/
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+.stats-section a:hover {
+	background-color: #E35205; /* PB Orange */
+	transition: 0.3s;
+}
+
+/* LEFT, #1 #3 */
+
+.stat-picture-left-container {
+	width: 100%;
+	float: left;
+	color: white;
+	position: relative;
+}
+
+.stat-picture-left-image {
+	width: 50%;
+	float: left;
+	margin: 0;
+	padding: 0;
+}
+
+.stat-picture-left-image img {
+	width: 100%;
+	display: block;
+}
+
+.stat-right {
+	width: 50%;
+	padding: 3%;
+	text-align: left;
+	position: absolute;
+	left:50%;
+	top:50%;
+	transform: translateY(-50%);
+}
+
+/* RIGHT #2 */
+
+.stat-picture-right-container {
+	width: 100%;
+	color: white;
+	float: right;
+	position: relative;
+}
+
+.stat-picture-right-image {
+	width: 50%;
+	float: right;
+	margin: 0;
+	padding: 0;
+}
+
+.stat-picture-right-image img {
+	width: 100%;
+	display: block;
+}
+
+.stat-left {
+	width: 50%;
+	padding: 3%;
+	text-align: right;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	transform: translateY(-50%);
+}
+
+/*** Bottom Full-About Area ***/
+
+#about-full-section h3 {
+	padding: 0 0 20px 0;
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+#about-full-section {
+	width: 100%;
+	padding: 3% 2%;
+	text-align: center;
+	background-color: white;
+	background-image: linear-gradient(to bottom, rgba(255,255,255, 0.7), rgba(255,255,255, 0.7)), url(../images/2019-crowd-shot-white.jpg);
+}
+
+#about-full-section p {
+	letter-spacing: .8px;
+	font-size: .8em;
+	line-height: 1.5em;
+	color: #643477; /* PB purple */
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+#about-full-section .blurb-anchor {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+}
+
+/*** Footer Section ***/
+
+.main-footer {
+	background: rgba(0,0,0,.1);
+	padding: 0 10px;
+	/* font-size: .7em; */
+	font-family: Arial, sans-serif;
+	line-height: 1.4em;
+	border-top: 10px solid #E35205;
+}
+
+.main-footer p {
+	font-family: Arial, sans-serif;
+}
+
+.footer-pb-logo {
+	width: 80%;
+}
+
+address {
+	font-size: 14px;
+}
+
+.footer-column h4 {
+	font-size: 18px;
+	margin-bottom: 5px;
+}
+
+.footer-column {
+	font-size: 14px;
+	float: left;
+	width: 14%;
+	margin: 2% 1.25%;
+}
+
+.footer-column a {
+	display: block;
+	font-size: 14px;
+}
+
+.footer-social-inline {
+	margin-top: 8px;
+}
+
+.footer-social-inline a {
+	display: inline;
+	font-size: 1.5em;
+	padding: 5px 6px 5px 0;
+}
+
+.copyright-footer {
+	background: rgba(0,0,0,.2);
+	text-align: center;
+	font-size: .6em;
+	padding: 1% 2%;
+}
+
+.copyright-footer p {
+	font-family: arial, sans-serif;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+/* CLASS CODE 
+
+header {
+    background-color: #FFED74;
+    border: 1px black solid;
+    padding: 5px;
+}
+nav {
+    background-color: #E8C66A;
+    border: 1px black solid;
+    padding: 5px;
+}
+article {
+    background-color: #E89C6C;
+    border: 1px black solid;
+    padding: 5px;
+}
+footer {
+    background-color: #FF957E;
+    border: 1px black solid;
+    padding: 5px;
+}
+div {
+    background-color: #FFE2B8;
+    border: 1px black solid;
+    padding: 5px;
+} */
+
+
+@media only screen and (min-width: 940px) /*greater than 940px*/
+{
+
+	body {
+	font-size: 18px;
+	}
+
+	.cards {
+		width: 28%;
+	}
+
+}
+
+@media only screen and (max-width: 940px) /*between 940 and 768*/
+{
+
+	body {
+	font-size: 18px;
+	}
+
+	.main-nav {
+	margin-top: 13%;
+	font-family: 'Barlow Condensed', sans-serif;
+	font-size: 1.35em;
+	text-align: right;
+	}
+
+	.main-nav a {
+		padding: 7px;
+	}
+
+	/* cards */
+
+	.cards {
+	width: 42%;
+	}
+
+	.stat-large-text {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-weight: 800;
+	font-size: 3em;
+	display: block;
+	text-transform: uppercase;
+	}
+
+	.stats-section p {
+		font-size: .7em;
+	}
+
+	.footer-column {
+		font-size: 16px;
+		line-height: 1.9em;
+	}
+
+	.footer-column h4 {
+		font-size: 20px;
+		margin: 10px 0 0 0;
+	}
+
+	.footer-social-inline a {
+	display: inline;
+	font-size: 1.6em;
+	padding: 0 5px 0 0;
+	}
+
+}
+
+@media only screen and (min-width: 770px) /*above 770*/
+{
+	.mobile-dropdown {
+		display:none;
+	}
+
+	.mobile-hamburger {
+		display: none;
+	}
+
+	.mobile-nav {
+		display:none;
+		position: absolute;
+		top: 0;
+		left: 0;
+		background: #fff;
+	}
+
+	.mobile-nav:target {
+		display:block;
+	}
+
+	#container {
+		display: none;
+	}
+
+}
+
+@media only screen and (max-width: 770px) /*below 770*/
+{
+	/* footer */
+
+	body {
+		font-size: 24px;
+	}
+
+	header {
+		height: 80px;
+	}
+
+	.nav-pb-logo {
+		width: 94px;
+		height: 78px;
+	}
+
+	.mobile-hamburger {
+	display: inline-block;
+	color: #E35205;
+	font-size: 2.3em;
+	}
+
+	.utility-nav {
+		display: none;
+	}
+
+	.full-nav {
+		padding: 0 2% 0 0;
+	}
+
+	.main-nav {
+		display: none;
+	}
+
+			/****** NAV HAMBURGER START ******/
+			/*********************************/
+
+	/* Style The Dropdown Button */
+.mobile-dropbtn {
+	background-color: #E35205;
+	color: white;
+	padding: 18px 18px 19px 18px;
+	font-size: 1.5em;
+	border: none;
+	cursor: pointer;
+}
+
+/* The container <div> - needed to position the dropdown content */
+.mobile-dropdown {
+	position: relative;
+	display: inline-block;
+}
+
+/* Dropdown Content (Hidden by Default) */
+.mobile-dropdown-content {
+	display: none;
+	position: absolute;
+	background-color: #f9f9f9;
+	min-width: 96vw;
+	box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+	border-top: 4px solid #E35205;
+	z-index: 1;
+	right: 0;
+}
+
+/* Links inside the dropdown */
+.mobile-dropdown-content a {
+	color: #E35205;
+	padding: 12px 16px;
+	text-decoration: none;
+	display: block;
+}
+
+/* Change color of dropdown links on hover */
+.mobile-dropdown-content a:hover {
+	background-color: #6EC72D;
+	color: white;
+}
+
+/* Show the dropdown menu on hover */
+.mobile-dropdown:hover .mobile-dropdown-content {
+	display: block;
+}
+
+/* Change the background color of the dropdown button when the dropdown content is shown */
+.mobile-dropdown:hover .mobile-dropbtn {
+	background-color: #6EC72D;
+}
+
+#nav1 {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-weight: 500;
+}
+
+#nav1 li {
+	display:block!important;
+	text-align: center;
+}
+
+.nav2-wrapper {
+	width: 100%;
+}
+
+#nav2 ul {
+	display: block;
+	margin: 0 auto;
+}
+
+#nav2 li {
+	display:inline-block!important;
+	font-size: .7em;
+	width:19%;
+	text-align:center;
+}
+
+			/******* NAV HAMBURGER END *******/
+			/*********************************/
+
+	.hero-section {
+		background-size: cover;
+	}
+
+/* JAVASCRIPT STUFF */
+	.main-nav.responsive {
+	  	position: relative;
+	}
+  	.main-nav.responsive a.icon {
+	    position: absolute;
+	    right: 0;
+	    top: 0;
+  	}
+  	.main-nav.responsive a {
+	    float: none;
+	    display: block;
+	    text-align: center;
+  	}
+ /* END JAVASCRIPT STUFF */
+
+	/* cards */
+
+	.cards {
+	width: 65%;
+	}
+
+	.stats-section p {
+		font-size: .5em;
+	}
+
+	/* about, full */
+
+	#about-full-section {
+		padding: 8% 6%;
+	}
+
+	/* footer */
+
+	.main-footer h4 {
+		font-size: 1.3em;
+		margin: 9px 0 9px 0;
+
+	}
+
+	.footer-pb-logo {
+		margin: 20px 0 5px 0;
+		width: 20%;
+	}
+
+	.footer-column {
+		float: none;
+		width: 100%;
+		text-align: center;
+		margin: 0;
+		padding: 0 0 10px 0;
+	}
+
+}
+
+
+@media only screen and (min-width: 640px) and (max-width: 710px) /*between 640 and 710*/
+{
+	.stats-section a {
+		margin-top: 0;
+	}
+
+	.stat-large-text {
+		line-height: 1.1em;
+	}
+}
+
+@media only screen and (max-width: 640px) /*at and below 640*/
+{
+
+	body {
+		font-size: 24px;
+	}
+
+	/*stats area*/
+
+	.stats-section p {
+		font-size: .7em;
+		margin-right: 25px;
+	}
+
+	.stat-right {
+		width: 100%;
+		position: relative;
+		display: block;
+		left: auto;
+		top: auto;
+		margin: 3% 3% 0 3%;
+		transform: none;
+	}
+
+	.stat-right a {
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	.stat {
+		display: block;
+	}
+
+	.stat-picture-left-container {
+		display: block;
+		width: 100%;
+		float: none;
+		position: relative;
+	}
+
+	.stat-picture-left-image {
+		display: block;
+		width: 100%;
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.stat-picture-right-container {
+		display: block;
+		width: 100%;
+		float: none;
+		position: relative;
+	}
+
+	.stat-picture-right-image {
+		display: block;
+		width: 100%;
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.stat-left {
+		width: 100%;
+		position: relative;
+		display: block;
+		text-align: left;
+		left: auto;
+		top: auto;
+		margin: 3%;
+		transform: none;
+	}
+
+	.stat-left a {
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	.stat-large-text {
+		line-height: 1.1em;
+	}
+
+	.hide-m {
+		display: none;
+	}
+}
+
+
+@media only screen and (max-width: 480px) /*below 480 px*/
+{
+	
+	body {
+		font-size: 24px;
+	}
+
+	h1 { 
+	 	font-size: 2.5em;
+	 }
+	h4 {
+		font-size: 1em;
+		line-height: 1.3em;
+	}
+
+	header {
+		height: 55px;
+	}
+
+	.nav-pb-logo {
+		height: 52px;
+		width: 63.3px;
+	}
+
+	.mobile-hamburger {
+		font-size: 1.45em;
+	}
+
+	.full-nav {
+		margin: 0 2% 0 0;
+	}
+
+	.fa-bars {
+		height: 10%;
+		vertical-align: middle;
+	}
+
+	#nav2 li {
+	display:inline-block!important;
+	font-size: .5em;
+	width:18%;
+	text-align:center;
+}
+
+	.hero-section {
+		padding: 20px 4%;
+		background-size: cover;
+	}
+
+	.hero-header, .hero-paragraph, .hero-button {
+		text-align: center;
+		margin: auto;
+	}
+
+	.hero-paragraph {
+		font-size: .8em;
+	}
+
+	.hero-section a {
+		display: block;
+		margin: 5px 10%;
+		font-size: 1em;
+	}
+
+	/* about section */
+
+	.about-blurb-section {
+		padding: 5%;
+	}
+
+	.more-link {
+		display: none;
+	}
+
+	.cards {
+		width: 78%;
+		padding-bottom: 100px;
+	}
+
+	.cards-section-wrapper {
+		padding: 20px 10px 40px 10px;
+	}
+
+	.blog-section {
+		padding: 10px;
+	}
+
+	/*stats area*/
+
+	.stats-section p {
+		font-size: .7em;
+	}
+
+	.stat-right {
+		width: 90%;
+		position: relative;
+		display: block;
+		left: auto;
+		top: auto;
+		padding: 6%;
+		margin: 0;
+		transform: none;
+	}
+
+	.stat-right a {
+		display: inline-block;
+	}
+
+	.stat {
+		display: block;
+	}
+
+	.stat-picture-left-container {
+		display: block;
+		width: 100%;
+		float: none;
+		position: relative;
+	}
+
+	.stat-picture-left-image {
+		display: block;
+		width: 100%;
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.stat-picture-right-container {
+		display: block;
+		width: 100%;
+		float: none;
+		position: relative;
+	}
+
+	.stat-picture-right-image {
+		display: block;
+		width: 100%;
+		float: none;
+		margin: 0;
+		padding: 0;
+	}
+
+	.stat-left {
+		width: 90%;
+		position: relative;
+		display: block;
+		text-align: left;
+		left: auto;
+		top: auto;
+		padding: 3%;
+		transform: none;
+	}
+
+	.stat-left a {
+		display: inline-block;
+		margin: 0 auto;
+	}
+
+	.stat-large-text {
+	font-family: 'Barlow Semi Condensed', sans-serif;
+	font-weight: 800;
+	font-size: 3em;
+	line-height: 1.1em;
+	display: block;
+	text-transform: uppercase;
+	}
+
+	#about-full-section {
+		padding: 10% 6% 10% 6%;
+	}
+
+	#about-full-section > p {
+		margin: 0 0 10px 0;
+	}
+
+	.hide-m {
+		display: none;
+	}
+
+	.main-footer {
+		padding: 10px 10px 15px;
+	}
+
+	.copyright-footer {
+		padding: 15px;
+	}
+
+	.footer-column {
+		font-size: .8em;
+	}
+
+	address {
+		font-size: .8em;
+	}
+
+	.footer-social-inline a{
+	display: inline;
+	font-size: 1.5em;
+	padding: 0 6px 0 0;
+	}
+}
+
+{ width: auto }
