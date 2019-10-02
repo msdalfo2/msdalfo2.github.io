@@ -62,7 +62,7 @@ h1 {
 }
 
 h2 {
-	font-size: 1.9em;
+	font-size: 2.0em;
 	color: #492657;
 	font-family: 'Barlow Condensed', sans-serif;
 	font-weight: 500;
@@ -250,7 +250,7 @@ header > * {
 /* Main  Nav: Start */
 
 .main-nav {
-	margin-top: 14%;
+	margin-top: 16%;
 	font-family: 'Barlow Condensed', sans-serif;
 	font-size: 1.5em;
 	text-align: right;
@@ -272,10 +272,12 @@ header > * {
 
 .hero-header {
 	padding-bottom: 5px;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
 }
 
 .hero-paragraph {
 	font-style: oblique;
+	text-shadow: 2px 2px 4px rgba(0,0,0,0.25);
 }
 
 .hero-section {
@@ -358,12 +360,12 @@ header > * {
 
 .cards-section {
 	height: 100%;
-	padding: 20px 0;
+	padding: 10px 0;
 }
 
 .cards {
 	width: 38%;
-	min-height: 100%;
+	/*min-height: 100%;*/
 	text-align: center;
 	margin: 10px;
 	padding: 20px;
@@ -389,7 +391,7 @@ header > * {
 	color: white;
 	text-decoration: none;
 	text-transform: uppercase;
-	margin: 0px 0 10px 0;
+	margin: 10px 0 10px 0;
 	padding: 10px 20px;
 	border-radius: 2px;
 	background-color: #6EC72D;
@@ -425,7 +427,7 @@ header > * {
 .blog-section {
 	background-color: #F7CFBA; /* light orange */
 	background-image: url(../images/food-pattern_2.png);
-	padding: 15px;
+	padding: 20px 15px;
 }
 
 .blog-section h2 {
@@ -435,7 +437,7 @@ header > * {
 .more-link {
 	display: inline-block;
 	float: right;
-	padding: 20px 0 0 0;
+	padding: 8px 0 0 0;
 }
 
 .blog-section article {
@@ -523,7 +525,7 @@ article .blog-button {
 
 .stat-large-text {
 	font-family: 'Barlow Semi Condensed', sans-serif;
-	font-weight: 800;
+	font-weight: 700;
 	font-size: 3em;
 	display: block;
 	text-transform: uppercase;
@@ -697,37 +699,8 @@ address {
 .copyright-footer p {
 	font-family: arial, sans-serif;
 	margin: 0 auto;
-	padding: 0;
+	padding-bottom: .5%;
 }
-
-
-/* CLASS CODE 
-
-header {
-    background-color: #FFED74;
-    border: 1px black solid;
-    padding: 5px;
-}
-nav {
-    background-color: #E8C66A;
-    border: 1px black solid;
-    padding: 5px;
-}
-article {
-    background-color: #E89C6C;
-    border: 1px black solid;
-    padding: 5px;
-}
-footer {
-    background-color: #FF957E;
-    border: 1px black solid;
-    padding: 5px;
-}
-div {
-    background-color: #FFE2B8;
-    border: 1px black solid;
-    padding: 5px;
-} */
 
 
 @media only screen and (min-width: 940px) /*greater than 940px*/
@@ -743,6 +716,13 @@ div {
 
 }
 
+@media only screen and (min-width: 1000px) /*between 940 and 768*/
+{
+	.main-nav {
+	margin-top: 18%;
+}
+}
+
 @media only screen and (max-width: 940px) /*between 940 and 768*/
 {
 
@@ -751,7 +731,7 @@ div {
 	}
 
 	.main-nav {
-	margin-top: 13%;
+	margin-top: 14.5%;
 	font-family: 'Barlow Condensed', sans-serif;
 	font-size: 1.35em;
 	text-align: right;
@@ -769,7 +749,7 @@ div {
 
 	.stat-large-text {
 	font-family: 'Barlow Semi Condensed', sans-serif;
-	font-weight: 800;
+	font-weight: 700;
 	font-size: 3em;
 	display: block;
 	text-transform: uppercase;
@@ -791,8 +771,8 @@ div {
 
 	.footer-social-inline a {
 	display: inline;
-	font-size: 1.6em;
-	padding: 0 5px 0 0;
+	font-size: 1.3em;
+	padding: 0 3px 0 0;
 	}
 
 }
@@ -996,6 +976,12 @@ div {
 
 	}
 
+	.footer-social-inline a {
+		font-size: 1.8em;
+		padding: 4px;
+		margin: 0 2px;
+	}
+	
 	.footer-pb-logo {
 		margin: 20px 0 5px 0;
 		width: 20%;
@@ -1028,6 +1014,22 @@ div {
 
 	body {
 		font-size: 24px;
+	}
+
+	.hero-section {
+		background-size: cover;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(../images/kids-desks-mobile_1200.png);
+	}
+
+	.hero-header, .hero-paragraph, .hero-button {
+		text-align: center;
+		margin: auto;
+	}
+
+	.hero-section a {
+		display: block;
+		margin: 5px 20%;
+		font-size: 1em;
 	}
 
 	/*stats area*/
@@ -1244,6 +1246,7 @@ div {
 	.hero-section {
 		padding: 20px 4%;
 		background-size: cover;
+		background-image: linear-gradient(to right, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/kids-desks-mobile_1040.png);
 	}
 
 	.hero-header, .hero-paragraph, .hero-button {
@@ -1357,7 +1360,7 @@ div {
 
 	.stat-large-text {
 	font-family: 'Barlow Semi Condensed', sans-serif;
-	font-weight: 800;
+	font-weight: 700;
 	font-size: 3em;
 	line-height: 1.1em;
 	display: block;
