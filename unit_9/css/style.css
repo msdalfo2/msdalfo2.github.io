@@ -1288,7 +1288,7 @@ address {
 
 	.cards {
 		width: 78%;
-		padding-bottom: 10px;
+		/*padding-bottom: 10px;*/
 	}
 
 	.cards-section-wrapper {
