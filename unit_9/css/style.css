@@ -826,6 +826,14 @@ address {
 		display: none;
 	}
 
+	#nav2 li a:hover {
+		color: white;
+	}
+
+	#nav2 li a:active {
+		color: white;
+	}
+
 			/****** NAV HAMBURGER START ******/
 			/*********************************/
 
@@ -862,10 +870,10 @@ address {
 	color: #E35205;
 	padding: 12px 16px;
 	text-decoration: none;
-	display: block; FIND
+	display: block;
 }
 
-	#nav2 a {
+#nav2 a {
 		color: white;
 		padding: 12px 0px;
 		margin: 0;
@@ -878,13 +886,12 @@ address {
 /* Change color of dropdown links on hover */
 .mobile-dropdown-content a:hover {
 	background-color: #6EC72D;
-	color: white;
+	color: white!important;
 }
 
 /* Show the dropdown menu on hover */
 .mobile-dropdown:hover .mobile-dropdown-content {
 	display: block;
-	color: white;
 }
 
 /* Change the background color of the dropdown button when the dropdown content is shown */
@@ -926,7 +933,7 @@ address {
 }
 
 #nav2 li a:hover {
-	color: white;
+	color: white!important;
 }
 
 			/******* NAV HAMBURGER END *******/
@@ -1202,6 +1209,10 @@ address {
 	#nav1 li {
 		display:block!important;
 		text-align: center;
+	}
+
+	#nav1 a:hover {
+		color: white!important;
 	}
 
 	.nav2-wrapper {
