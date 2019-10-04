@@ -328,7 +328,7 @@ header > * {
 	max-width: 700px;
 	text-align: center;
 	letter-spacing: .8px;
-	line-height: 1.7em;
+	line-height: 1.5em;
 	margin: 0 auto;
 }
 
@@ -374,8 +374,8 @@ header > * {
 }
 
 .cards p {
-	line-height: 1.55em;
-	font-size: .8em;
+	line-height: 1.5em;
+	font-size: .75em;
 }
 
 .cards-section-wrapper h2 {
@@ -460,6 +460,7 @@ article a:hover {
 article p {
 	padding: 5px 0 22px 0;
 	font-size: .75em;
+	line-height: 1.5em;
 }
 
 article .blog-button {
@@ -646,7 +647,7 @@ article .blog-button {
 	padding: 0 10px;
 	/* font-size: .7em; */
 	font-family: Arial, sans-serif;
-	line-height: 1.4em;
+	line-height: 1.5em;
 	border-top: 10px solid #E35205;
 }
 
